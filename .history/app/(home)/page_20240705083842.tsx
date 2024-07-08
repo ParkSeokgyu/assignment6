@@ -1,11 +1,10 @@
 "use client"
+
 import { EmailIcon, PasswordIcon, UsernameIcon } from "@/components/Icons";
 import Button from "@/components/button";
 import Input from "@/components/input";
 import { useFormState } from "react-dom";
 import { homeLogin } from "./actions";
-
-import "@/lib/db" //  요거 작성(테스트용)
 
 export default function Home() {
   const [state, action] = useFormState(homeLogin, null);

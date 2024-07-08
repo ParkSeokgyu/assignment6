@@ -5,7 +5,7 @@ import Input from "@/components/input";
 import { useFormState } from "react-dom";
 import { homeLogin } from "./actions";
 
-import "@/lib/db" //  요거 작성(테스트용)
+import "@/lib/db" //  요거 작성
 
 export default function Home() {
   const [state, action] = useFormState(homeLogin, null);
